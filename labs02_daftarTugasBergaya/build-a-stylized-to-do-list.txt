@@ -1,0 +1,94 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Styled To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<ul class="todo-list">
+ 
+ <li>
+  <input type="checkbox" id="task-1">
+  <label for="task-1">Belajar CSS Dasar</label>
+  
+  <ul class="sub-item">
+    <li>
+      <a href="https://google.com" class="sub-item-link" target="_blank">Referensi Link</a>
+    </li>
+  </ul>
+</li>
+
+<li>
+  <input type="checkbox" id="task-1">
+  <label for="task-1">Belajar CSS Dasar</label>
+  
+  <ul class="sub-item">
+    <li>
+      <a href="https://google.com" class="sub-item-link" target="_blank">Referensi Link</a>
+    </li>
+  </ul>
+</li>
+
+<li>
+  <input type="checkbox" id="task-1">
+  <label for="task-1">Belajar CSS Dasar</label>
+  
+  <ul class="sub-item">
+    <li>
+      <a href="https://google.com" class="sub-item-link" target="_blank">Referensi Link</a>
+    </li>
+  </ul>
+</li>
+
+<li>
+  <input type="checkbox" id="task-1">
+  <label for="task-1">Belajar CSS Dasar</label>
+  
+  <ul class="sub-item">
+    <li>
+      <a href="https://google.com" class="sub-item-link" target="_blank">Referensi Link</a>
+    </li>
+  </ul>
+</li>
+</ul>
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+.sub-item-link {
+  text-decoration: none; 
+  font-weight: 500;     
+}
+
+.sub-item-link:link {
+  color: #3498db; 
+}
+
+.sub-item-link:visited {
+  color: #9b59b6;
+}
+
+.sub-item-link:hover {
+  color: #e67e22; 
+}
+
+.sub-item-link:focus {
+  outline: 2px solid #27ae60;
+  outline-offset: 2px;
+}
+
+.sub-item-link:active {
+  color: #c0392b;
+}
+
+** end of styles.css **
+
