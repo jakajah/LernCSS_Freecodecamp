@@ -1,0 +1,79 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="blog-post-card">
+        <img src="https://assets.promediateknologi.id/crop/0x0:0x0/1200x0/webp/photo/p3/76/2024/09/05/IMG_20240905_170900-162789730.jpg" alt="kota cirebon" class="post-img">
+
+    <div class="post-content">
+        <h2 class="post-title">KOTA CIREBON</h2>
+        <p class="post-excerpt">Kota Cirebon (dikenal sebagai Kota Wali) adalah kota pelabuhan penting di pesisir utara Provinsi Jawa Barat yang berfungsi sebagai pusat ekonomi, budaya, dan sejarah di wilayah timur Jawa Barat</p>
+        <a href="https://id.wikipedia.org/wiki/Kota_Cirebon" class="read-more">Read More</a>
+    </div>
+    </div>
+
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+    background-color: #d1d8e0; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-post-card {
+    background-color: white;
+    width: 350px;
+    border-radius: 15px;
+    overflow: hidden; 
+    text-align: justify;
+}
+
+.post-img {
+    width: 100%;
+    border-bottom: 4px solid #4b7bec;
+}
+
+.post-content {
+    padding: 20px; 
+}
+
+.post-title {
+    color: #2d98da;
+    margin: 10px 15px; 
+}
+
+.post-excerpt {
+    color: #4b6584;
+    margin: 10px 15px;
+}
+
+.read-more {
+    display: inline-block; 
+    background-color: #4b7bec;
+    color: white;
+    padding: 10px 20px;
+    margin: 15px;
+    border-radius: 5px;
+    text-decoration: none; 
+}
+
+.read-more:hover {
+    background-color: #3867d6;
+}
+
+** end of styles.css **
+
