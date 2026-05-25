@@ -1,0 +1,223 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Poin 1: Elemen div dengan kelas container -->
+    <div class="container">
+        <h1>Job Application</h1>
+        
+        <!-- Poin 2: Elemen form di dalam container -->
+        <form id="job-app-form">
+            
+            <!-- Poin 3 & 9: Input text dengan id 'name' beserta labelnya -->
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+
+            <!-- Poin 4 & 9: Input email dengan id 'email' beserta labelnya -->
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            </div>
+
+            <!-- Poin 5 & 9: Elemen select dengan id 'position' beserta labelnya -->
+            <div class="form-group">
+                <label for="position">Job Position:</label>
+                <select id="position" name="position" required>
+                    <option value="" disabled selected>Select a position</option>
+                    <option value="frontend">Frontend Developer</option>
+                    <option value="backend">Backend Developer</option>
+                    <option value="designer">UI/UX Designer</option>
+                </select>
+            </div>
+
+            <!-- Poin 6: Elemen fieldset dengan kelas radio-group -->
+            <fieldset class="radio-group">
+                <legend>Availability</legend>
+                
+                <!-- Poin 7: Kelompok input radio dengan name 'availability' -->
+                <div class="radio-option">
+                    <input type="radio" id="full-time" name="availability" value="full-time" required>
+                    <!-- Poin 9: Label yang berasosiasi dengan input radio -->
+                    <label for="full-time">Full-Time</label>
+                </div>
+                
+                <div class="radio-option">
+                    <input type="radio" id="part-time" name="availability" value="part-time">
+                    <!-- Poin 9: Label yang berasosiasi dengan input radio -->
+                    <label for="part-time">Part-Time</label>
+                </div>
+            </fieldset>
+
+            <!-- Poin 8 & 9: Elemen textarea dengan id 'message' beserta labelnya -->
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Enter your message"></textarea>
+            </div>
+
+            <!-- Poin 10: Elemen button dengan jenis submit -->
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Poin 11 & 12: Pseudo-class Focus (Hanya input dan textarea) */
+input:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+    border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+    border-color: green;
+}
+
+/* Penataan Tombol Dasar */
+button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Radio Group Styling */
+.radio-group {
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.radio-group legend {
+    padding: 0 0.5rem;
+    color: #555;
+    font-weight: bold;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.radio-option label {
+    margin-bottom: 0;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+/* Pengaturan Dasar Tombol Radio */
+.radio-group input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+/* Poin 16, 17, 18: Pseudo-class Checked untuk border, background, dan box-shadow */
+.radio-group input[type="radio"]:checked {
+    border-color: #007bff;
+    background-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Poin 19: Pseudo-class Checked dengan induk .radio-group untuk mengubah warna label */
+.radio-group input[type="radio"]:checked + label {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Poin 20: Pseudo-class first-of-type pada input */
+input:first-of-type {
+    border-radius: 15px;
+}
+
+
+** end of styles.css **
+
