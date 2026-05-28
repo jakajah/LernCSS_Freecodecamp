@@ -1,0 +1,32 @@
+.form-container {
+  background-color: pink;
+  border-radius: 3em;
+  padding:2em;
+  width: auto;
+}
+
+label {
+  margin: 15px;
+  color: white;
+}
+
+input {
+  width: 12em;
+  padding: 5px;
+  margin: 5px;
+}
+
+textarea {
+  width: 13em;
+  padding: 5px;
+  margin: 5px;
+}
+
+button {
+  background-color: white;
+  font-size:20px;
+}
+
+button:hover {
+  background-color: pink;
+}
