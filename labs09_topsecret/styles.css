@@ -1,0 +1,41 @@
+body {
+    /* 1. Tipografi Dasar */
+    font-family: 'Arial', sans-serif;
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.6;
+
+    /* 2. Warna dan Latar Belakang */
+    background-color: #4a4466;
+
+    /* 3. Pengaturan Jarak (Reset Bawaan Browser) */
+    margin: 0;
+    padding: 0;
+
+    /* 4. Tampilan (Opsional untuk Layout Fleksibel) */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#email {
+  padding: 50px;
+  width: 500px;
+  border: 2px;
+  margin-top: 50px;
+  box-sizing: border-box;
+  color: #6eadbc;
+}
+
+#confidential, #top-secret {
+  display: inline-block;
+  padding: 10px;
+  margin-left: 10px;
+  border: 2px solid #6eadbc;
+  margin-bottom: 20px;
+  transform: rotate(-10deg);
+}
+
+.blurred {
+  filter: blur(3px);
+}
