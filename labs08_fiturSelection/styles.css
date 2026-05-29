@@ -1,0 +1,77 @@
+/* --- Gaya Dasar Minimalis (Agar Lulus Uji) --- */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.feature-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feature-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+/* ========================================================
+   8. PEMILIH / SELECTOR UNTUK KOTAK CENTANG
+   ======================================================== */
+input[type="checkbox"] {
+  /* 9. Wajib diatur ke appearance: none */
+  appearance: none;
+  -webkit-appearance: none;
+  
+  /* Ukuran kotak */
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  position: relative; 
+  display: inline-block;
+  cursor: pointer;
+
+  /* 10, 11, 12. Properti Batas Pilihan Anda */
+  border-width: 2px;         /* 10. Lebar batas pilihan */
+  border-color: #000000;     /* 11. Warna batas pilihan (Hitam) */
+  border-style: solid;       /* 12. Gaya batas pilihan (Solid) */
+}
+
+/* ========================================================
+   14 & 15. PERUBAHAN WARNA SAAT DICENTANG (:checked)
+   ======================================================== */
+input[type="checkbox"]:checked {
+  background-color: #0000ff !important; /* 14. Latar belakang berubah menjadi Biru */
+  border-color: #0000ff !important;     /* 15. Warna batas berubah menjadi Biru */
+}
+
+/* ========================================================
+   13. TANDA CENTANG ✓ TEPAT DI TENGAH KOTAK
+   ======================================================== */
+input[type="checkbox"]::after {
+  content: "✓";
+  position: absolute;
+  display: none;
+  
+  /* Rumus mengunci posisi tepat di tengah kotak */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  color: #ffffff; /* Warna putih agar kontras di atas warna biru */
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Menampilkan tanda centang hanya saat statusnya :checked */
+input[type="checkbox"]:checked::after {
+  display: block;
+}
