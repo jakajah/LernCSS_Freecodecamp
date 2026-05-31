@@ -1,0 +1,36 @@
+body {
+  background-color: #dd2d4a;
+  color: #f49cbb;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-sarfi, arial;
+}
+
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  justify-content: space-between;
+  align-self: flex-start;
+  display: flex;
+}
+
+.middle {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  align-self: flex-end;
+}
+
+.left {
+  align-self: flex-start;
+}
+
