@@ -1,0 +1,105 @@
+/* Pengaturan Umum Halaman */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+#title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1a1a2e;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* Penataan Area Gambar */
+#img-div {
+    background-color: #fafafa;
+    padding: 15px;
+    margin: 0 0 30px 0;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+}
+
+/* User Story 8 & 9: Gambar responsif dan berada di tengah induknya */
+#image {
+    display: block;        /* Mengubah ke block agar margin auto bekerja */
+    max-width: 100%;       /* Responsif, tidak melebihi wadah induk */
+    height: auto;          /* Menjaga proporsi rasio tinggi gambar */
+    margin: 0 auto;        /* Memusatkan gambar secara horizontal */
+}
+
+#img-caption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+/* Penataan Informasi */
+#tribute-info {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    color: #1a1a2e;
+    margin-top: 40px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+blockquote {
+    background-color: #f9f9f9;
+    border-left: 5px solid #2a2a40;
+    margin: 30px 0;
+    padding: 10px 20px;
+    font-style: italic;
+}
+
+/* Penataan Footer Link */
+.tribute-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 1.1rem;
+}
+
+#tribute-link {
+    color: #3b3b4f;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#tribute-link:hover {
+    color: #000;
+}
